@@ -51,7 +51,7 @@ it("works when you click on the left arrow", function () {
     expect(queryByAltText("Photo by Pratik Patel on Unsplash")).not.toBeInTheDocument();
 });
 
-it("hides arrows when no more pics in that direction", function () {
+it("hides arrows when no pics in that direction", function () {
     const { queryByTestId } = render(<Carousel />);
 
     const leftArrow = queryByTestId("left-arrow");
